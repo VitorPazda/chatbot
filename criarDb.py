@@ -1,4 +1,0 @@
-def criarDb():
-    pass
-
-criarDb
