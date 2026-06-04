@@ -1,0 +1,4 @@
+def criarDb():
+    pass
+
+criarDb
