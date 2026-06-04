@@ -1,7 +1,8 @@
 from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma.vectorstores import Chroma
-from langchain_openai import OpenAIEmbeddings
+# from langchain_openai import OpenAIEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -25,7 +26,9 @@ def splitChunks(documents):
     return chunks
 
 def vectorizeChunks(chunks):
-    db = Chroma.from_documents(chunks, OpenAIEmbeddings(), persist_directory="db")
+    # db = Chroma.from_documents(chunks, OpenAIEmbeddings(), persist_directory="db")
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    db = Chroma.from_documents(chunks,embeddings,persist_directory="db")
     print("Database created successfully")
 
 def createDb():
