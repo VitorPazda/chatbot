@@ -2,6 +2,9 @@ from langchain_community.document_loaders import PyPDFDirectoryLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
+from dotenv import load_dotenv
+
+load_dotenv()
 
 baseFolder = "base"
 
@@ -22,7 +25,8 @@ def splitChunks(documents):
     return chunks
 
 def vectorizeChunks(chunks):
-    pass
+    db = Chroma.from_documents(chunks, OpenAIEmbeddings(), persist_directory="db")
+    print("Database created successfully")
 
 def createDb():
     documents = loadDocuments()
