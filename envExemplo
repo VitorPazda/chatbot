@@ -1,0 +1,4 @@
+# aqui vai sua chave da OpenAI API
+OPENAI_API_KEY=
+
+# deixei no gitignore pois se trata de uma chave pessoal minha
