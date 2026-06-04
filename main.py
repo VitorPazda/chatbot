@@ -27,6 +27,9 @@ question = input("Escreva sua pergunta: ")
 
 # carregar db
 embeddingFunction = OpenAIEmbeddings()
-db = Chroma(persiste_directory=databasePath, embedding_function=embeddingFunction)
+db = Chroma(persist_directory=databasePath, embedding_function=embeddingFunction)
 
 # comparar a pergunta do usuario, com o db
+results = db.similarity_search_with_relevance_scores(question)
+print(results)
+print(len(results))
