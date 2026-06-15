@@ -2,6 +2,8 @@
 
 # pip install python-dotenv langchain langchain-openai langchain-community langchain-chroma chromadb openai pypdf langchain-ollama
 
+# irm https://ollama.com/install.ps1 | iex
+
 # Teste hugging face
 # pip install langchain-huggingface sentence-transformers
 
@@ -53,7 +55,7 @@ def ask():
     prompt = ChatPromptTemplate.from_template(promptTemplate)
     prompt = prompt.invoke({"question": question, "baseConhecimento": baseConhecimento})
 
-    model = ChatOllama()
+    model = ChatOllama(model="llama3.2",temperature=0)
     textAnswer = model.invoke(prompt)
     print(textAnswer)
     
