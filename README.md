@@ -30,7 +30,6 @@ Siga o passo a passo abaixo para configurar e executar o projeto na sua máquina
 
 1. Clonar o Repositório
 git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
-cd NOME_DO_REPOSITORIO
 
 2. Instalar as Bibliotecas
 pip install google-genai python-dotenv langchain langchain-community langchain-chroma chromadb sentence-transformers pypdf
