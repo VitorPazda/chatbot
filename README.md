@@ -41,5 +41,5 @@ GEMINI_API_KEY=AIzaSySuaChaveGeradaNoAIStudioAqui
 
 5. Executar
 
-- Link do vídeo do Youtube:
+-- Link do vídeo do Youtube:
 https://www.youtube.com/watch?v=zWtbpXoQbJ0&feature=youtu.be
