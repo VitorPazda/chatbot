@@ -29,7 +29,7 @@ Como Rodar
 Siga o passo a passo abaixo para configurar e executar o projeto na sua máquina:
 
 1. Clonar o Repositório
-git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
+git clone https://github.com/VitorPazda/chatbot.git
 
 2. Instalar as Bibliotecas
 pip install google-genai python-dotenv langchain langchain-community langchain-chroma chromadb sentence-transformers pypdf
@@ -40,3 +40,6 @@ pip install google-genai python-dotenv langchain langchain-community langchain-c
 GEMINI_API_KEY=AIzaSySuaChaveGeradaNoAIStudioAqui
 
 5. Executar
+
+Link do vídeo do Youtube:
+https://www.youtube.com/watch?v=zWtbpXoQbJ0&feature=youtu.be
