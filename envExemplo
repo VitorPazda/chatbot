@@ -1,4 +1,5 @@
 # aqui vai sua chave da OpenAI API
-OPENAI_API_KEY=
+OPENAI_API_KEY=EXEMPLO
+GOOGLE_API_KEY=EXEMPLO
 
 # deixei no gitignore pois se trata de uma chave pessoal minha
