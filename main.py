@@ -38,6 +38,7 @@ else:
     db = Chroma(persist_directory=databasePath, embedding_function=embeddingFunction)
 
 # Pergunta ao usuario
+os.system('cls' if os.name == 'nt' else 'clear')
 pergunta = input("\nEscreva sua pergunta sobre como jogar de Gragas: ")
 
 # Busca os trechos mais relevantes do pdf
