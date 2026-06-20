@@ -37,7 +37,7 @@ pip install google-genai python-dotenv langchain langchain-community langchain-c
 3. Criar o Arquivo .env na raiz do projeto
 
 4. Adicionar a sua chave Gemini Api Key
-GEMINI_API_KEY=AIzaSySuaChaveGeradaNoAIStudioAqui
+GEMINI_API_KEY=SuaChaveGeradaNoAIStudioAqui
 
 5. Executar
 
